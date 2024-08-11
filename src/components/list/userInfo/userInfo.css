@@ -1,0 +1,32 @@
+.userInfo {
+    padding: 20px;     /* 边缘填充 */
+    display: flex;     /* 弹性布局 */
+    align-items: center;  /* 所有元素在垂直方向上居中对齐 */
+    justify-content: space-between;  
+}
+
+/* 设置 user 类中的组件样式 */
+.user {
+    display: flex;         /* 弹性布局 */
+    align-items: center;  /* 所有元素在垂直方向上居中对齐 */
+    gap: 20px;            /* 内部组件间的间隔为 20px */
+
+    img {
+        width: 50px;         /* 图片宽度 */
+        height: 50px;        /* 图片高度 */
+        border-radius: 50%;  /* 边角弧度，50% 即为圆形 */
+        object-fit: cover;
+    }
+}
+
+/* 设置 icons 类中的组件样式 */
+.icons {
+    display: flex;  /* 弹性布局 */
+    gap: 20px;      /* 内部组件间隔 */
+
+    img {
+        width: 20px;    /* 图片宽度 */
+        height: 20px;   /* 图片高度 */
+        cursor: pointer;  /* 使图片可以被点击 */
+    }
+}

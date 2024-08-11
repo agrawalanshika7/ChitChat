@@ -1,0 +1,80 @@
+.chatList {
+    flex: 1;    /* 使元素成为弹性容器的一个弹性项，占据父容器的剩余空间 */
+    overflow: scroll;    /* 当内容溢出容器时，显示滚动条 */
+    .search {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        padding: 20px;
+
+        .searchBar {
+            flex: 1;  /* 尽可能占据剩余空间 */
+            background-color: rgba(17,25,40,0.5);
+            display: flex;     /* 弹性布局 */
+            align-items: center;   /* 所有元素在垂直方向上居中对齐 */
+            gap: 20px;   /* 内部组件间隔 */
+            border-radius: 10px;  /* 外圈弧度 */
+
+            /* 设置 searchBar 里的 input 组件的样式 */
+            input {
+                background-color: transparent;   /* 背景透明色 */
+                border: none;        /* 无边框 */
+                outline: none;       /* 无轮廓 */
+                color: white;      /* 输入文字的颜色为白色 */
+                flex: 1;    /* 尽可能占据剩余空间 */
+                padding: 10px;  /* 填充边缘以适配 img 的大小 */
+            }
+
+            /* 设置 img 组件大小，即 放大镜 图标 */
+            img {    
+                width: 20px;
+                height: 20px;
+            }
+        }
+
+        /* 设置 .add 类组件样式，即 加号 图标 */
+        .add {
+            width: 36px;
+            height: 36px;
+            background-color: rgba(17,25,40,0.5);
+            padding: 10px;
+            border-radius: 10px;
+            cursor: pointer;     /* 可点击 */
+        }
+    }
+
+    .item {
+        display: flex;        /* 弹性布局 */
+        align-items: center;   /* 所有元素在垂直方向上居中对齐 */
+        gap: 20px;         /* 内部组件间隔 */
+        padding: 20px;     /* 边缘填充 */
+        cursor: pointer;   /* 可点击 */
+        border-bottom: 1px solid #dddddd35;  /* 底部边框 */
+
+        /* 设置 用户图标 样式 */
+        img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;  /* 圆形 */
+            object-fit: cover;  /* 使图片或视频填满容器，同时保持其宽高比，超出部分会被裁剪 */
+        }
+
+        /* 设置文字内容样式 */
+        .texts {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            /* 用户名称 */
+            span {
+                font-weight: 500
+            };
+
+            /* 聊天记录片段 */
+            p {
+                font-size: 14px;
+                font-weight: 300;
+            }
+        }
+    }
+}
