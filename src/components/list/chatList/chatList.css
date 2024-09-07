@@ -9,7 +9,7 @@
 
         .searchBar {
             flex: 1;  /* 尽可能占据剩余空间 */
-            background-color: rgba(17,25,40,0.5);
+            background-color: rgba(40, 17, 20, 0.5);
             display: flex;     /* 弹性布局 */
             align-items: center;   /* 所有元素在垂直方向上居中对齐 */
             gap: 20px;   /* 内部组件间隔 */
@@ -36,7 +36,7 @@
         .add {
             width: 36px;
             height: 36px;
-            background-color: rgba(17,25,40,0.5);
+            background-color: rgba(40, 17, 19, 0.5);
             padding: 10px;
             border-radius: 10px;
             cursor: pointer;     /* 可点击 */
